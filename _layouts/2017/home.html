@@ -38,7 +38,7 @@
     {% endfor %}
 
     <h2 class='category item' data-js-searchable-header>
-      <span>Recently updated</span>
+      <span>最近更新</span>
     </h2>
 
     {% for page in recent_pages reversed %}
@@ -63,9 +63,9 @@
     {% endfor %}
 
     <div class='message item missing-message'>
-      <h3>See something missing?</h3>
+      <h3>有内容缺失?</h3>
       <p>
-        <a class='push-button' href='{{ site.github.repository_url }}/issues/907'>Request cheatsheet</a>
+        <a rel='nofollow' class='push-button' href='{{ site.github.repository_url }}/issues/907'>请求更新速查表</a>
       </p>
     </div>
   </div>

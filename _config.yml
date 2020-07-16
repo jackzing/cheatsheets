@@ -3,10 +3,12 @@
 whitelist:
   - jekyll-redirect-from
   - jekyll-github-metadata
+  - jekyll-extlinks
 
 plugins:
   - jekyll-redirect-from
   - jekyll-github-metadata
+  - jekyll-extlinks
 
 exclude:
   - .babelrc
@@ -28,6 +30,11 @@ exclude:
   - webpack.config.js
   - yarn-error.log
   - yarn.lock
+
+extlinks:
+  attributes: {rel: nofollow, target: _blank}
+  rel_exclude: ['11meigui.com']
+
 
 # Markdown
 
@@ -51,15 +58,14 @@ defaults:
       og_type: article
       type: article
       category: "Others"
-      excerpt_separator: "<!--more-->"
+      excerpt_separator: "<!--更多-->"
       prism_languages: []
 
 # Site info
 
-url: https://devhints.io
-title: Devhints.io cheatsheets
-
+url: https://11meigui.com/dev
+title: 11meigui.com 全栈开发速查表
 # GitHub metadata
 # https://help.github.com/articles/repository-metadata-on-github-pages/
 
-repository: rstacruz/cheatsheets
+repository: jackzing/cheatsheets

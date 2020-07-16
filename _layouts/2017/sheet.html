@@ -34,18 +34,17 @@
 
   {% if page.intro %}
     <div class='intro-content MarkdownBody'>
-      {{ page.intro | markdownify }}
+      {{ page.intro | markdownify | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http'}}
     </div>
   {% endif %}
 
   <main class='post-content MarkdownBody' data-js-main-body data-js-anchors role='main'>
-    {{ content }}
+    {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http'  }}
   </main>
 </div>
 
 <div class='pre-footer' data-js-no-preview><i class='icon'></i></div>
 
-{% include 2017/comments-area.html page=page %}
 {% include 2017/search-footer.html %}
 {% include 2017/related-posts.html page=page %}
 {% include 2017/foot.html %}

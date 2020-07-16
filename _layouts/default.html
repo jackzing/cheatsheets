@@ -1,5 +1,6 @@
 ---
 type: article
+layout: compress
 ---
 {% include head.html %}
 {% include site-header.html %}
@@ -11,14 +12,10 @@ type: article
     <div class='post-headline -cheatsheet'>
       <p class='prelude'><span></span></p>
       <h1><span>{{ page.title }}</span></h1>
-
-      <div class='pubbox'>
-        {% include 2017/headline-pub.html %}
-      </div>
     </div>
 
     <div class='post-content -cheatsheet'>
-      {{ content }}
+      {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http'  }}
     </div>
 
     {% include social-list.html page=page %}
