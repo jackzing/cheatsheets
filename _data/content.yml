@@ -1,7 +1,7 @@
 home:
   title: "全栈开发速查表"
   tagline: |
-      速查表来自 <a href="https://github.com/rstacruz/cheatsheets">rstacruz/cheatsheets</a> , <a href="http://www.11meigui.com">嘻嘻IT</a>翻译整理，在此基础上新增更新和修改，只用于技术开发。
+      速查表来自 <a rel="nofollow" href="https://github.com/rstacruz/cheatsheets">rstacruz/cheatsheets</a> , <a href="http://www.11meigui.com">嘻嘻IT</a>翻译整理，在此基础上新增更新和修改，只用于<b>技术开发</b>。
 
 top_nav:
   title: 全栈开发速查表
@@ -12,7 +12,7 @@ sheet:
   suffix: 全栈开发速查表
 
 related_posts_callout:
-  description: Over SIZE curated cheatsheets, by developers for developers.
+  description: 一共有 SIZE 全栈开发速查表.
   link: 嘻嘻IT
 
 related_posts_group:
@@ -21,7 +21,7 @@ related_posts_group:
   category: Other CATEGORY cheatsheets
 
 search_form:
-  default_placeholder: Search SIZE+ cheatsheets
+  default_placeholder: 搜搜 SIZE+ 速查表
   home_placeholder: 搜搜
   prefix: 全栈速查
 
@@ -31,6 +31,6 @@ comments_area:
 
 not_found:
   title: 没有找到
-  description: Sorry, we don't have a cheatsheet for this yet. Try searching!
+  description: 抱歉，我们现在没有这个内容的速查表，换一个别的内容搜搜试试！
   home: 返回首页
 
